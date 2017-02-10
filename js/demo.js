@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
         particleRadius: 3,
         parallaxMultiplier: 20,
         proximity: 170,
-        density: 15000
+        //density: 15000
+		density: 5000
 
 	
   });
