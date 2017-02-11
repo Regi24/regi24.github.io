@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+<title>Canvas Test</title>
+<style>
+canvas {
+    <!--border: 3px #CCC solid;-->
+}
+</style>
+</head>
+ 
+<body>
+<div id="container">
+    <canvas id="myCanvas" height="450" width="450"></canvas>
+</div>
+<script>
+var mainCanvas = document.getElementById("myCanvas");
+var mainContext = mainCanvas.getContext('2d');
+ 
+var canvasWidth = mainCanvas.width;
+var canvasHeight = mainCanvas.height;
+ 
+var angle = 0;
+ 
+var requestAnimationFrame = window.requestAnimationFrame || 
+                            window.mozRequestAnimationFrame || 
+                            window.webkitRequestAnimationFrame || 
+                            window.msRequestAnimationFrame;
+ 
+function drawCircle() {
+	//Clear the canvas
+    mainContext.clearRect(0, 0, canvasWidth, canvasHeight);
+     
+    // color in the background
+    <!--mainContext.fillStyle = "#EEEEEE";-->
+    <!--mainContext.fillRect(0, 0, canvasWidth, canvasHeight);-->
+
+	//draw triangle
+	mainContext.beginPath();
+    mainContext.moveTo(225, 50);
+    mainContext.lineTo(100, 75);
+    mainContext.lineTo(100, 25);
+  
+
+     
+    // color in the circle
+    mainContext.fillStyle = "#4b2260";
+    mainContext.fill();
+      
+    //angle += Math.PI / 64;
+     
+    //requestAnimationFrame(drawCircle);
+}
+drawCircle();
+</script>
+</body>
+</html>

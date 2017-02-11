@@ -2,13 +2,13 @@ document.addEventListener('DOMContentLoaded', function () {
   particleground(document.getElementById('particles'), {
     //dotColor: '#5cbdaa',
     //lineColor: '#5cbdaa'
-	    dotColor: '#377486',
-        lineColor: '#377486',
+	    dotColor: '#ffffff',
+        lineColor: '#ffffff',
         particleRadius: 3,
         parallaxMultiplier: 20,
         proximity: 170,
-        //density: 15000
-		density: 5000
+        density: 15000
+
 
 	
   });
